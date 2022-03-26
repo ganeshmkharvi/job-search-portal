@@ -58,6 +58,7 @@ const Checkout = () => {
         };
 
         fetch(`${process.env.REACT_APP_BASE_API_URL}${Constants.URL.CHECKOUT}`, requestOptions).then(function (response) {
+            scrollToTop();
             if (response.status === Constants.STATUS_CODE.STATUS_201) {
                 setIsSuccess(true);
                 setIsFetched(true);
@@ -70,8 +71,16 @@ const Checkout = () => {
             err => {
                 setIsSuccess(false);
                 console.log('error is ' + err);
+                scrollToTop();
             };
     }
+
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // for smoothly scrolling
+        });
+      };
 
     const displayMessage = () => {
         if (isFetched) {
