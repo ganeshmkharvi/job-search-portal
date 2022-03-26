@@ -85,7 +85,7 @@ To run this project, you'll need to have the following installed:
 
    ```JS
    REACT_APP_BASE_API_URL = <REACT_APP_BASE_API_URL> 
-   E.g. http://localhost:3001/api/
+   E.g. REACT_APP_BASE_API_URL = http://localhost:3001/api/
    
    ```
 
