@@ -84,7 +84,8 @@ To run this project, you'll need to have the following installed:
 3. Create `.env` file and configure :
 
    ```JS
-   REACT_APP_BASE_API_URL = <REACT_APP_BASE_API_URL> .E.g. http://localhost:3001/api/ 
+   REACT_APP_BASE_API_URL = <REACT_APP_BASE_API_URL> 
+   E.g. http://localhost:3001/api/ 
    ```
 
 4. Start the server :
