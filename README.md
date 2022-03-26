@@ -1,6 +1,23 @@
-# Getting Started with Create React App
+<!-- ABOUT THE PROJECT -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### What's inside this repo?
+
+- Home page based on: 
+https://getbootstrap.com/docs/4.5/examples/jumbotron/ 
+Instead of each “Heading” column we are display the services - so, the column names from left to right are corresponding to three services. 
+Each service has its name, slug and descriptionloaded from the services API. 
+- Clicking on the “View details” button will take you to the respective service page which is based on https://getbootstrap.com/docs/4.5/examples/pricing/ template.
+- On clicking Buy Now, it will take you to Checkout page based on https://getbootstrap.com/docs/4.5/examples/checkout/  template. Continue to checkout button will call checkout api if all the validations pass.
+
+### API Source
+- Api git url: https://github.com/ganeshmkharvi/job-search-api-server
+- GET services api url- http://localhost:3001/api/services 
+- POST checkout api url - http://localhost:3001/api/checkout
+- Replace 3001 with the appropriate port number you used in your project.
+
+### Built With
+
+- [React]() - JavaScript library
 
 ## Available Scripts
 
@@ -39,32 +56,26 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repo :
+   ```sh
+   git clone git https://github.com/ganeshmkharvi/job-search-portal.git
+   ```
+2. Install dependencies (use `sudo` if required) :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```sh
+   npm install
+   ```
 
-### Code Splitting
+3. Create `.env` file and configure :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```JS
+   REACT_APP_BASE_API_URL = <REACT_APP_BASE_API_URL>
+   ```
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Start the server :
+   ```sh
+   npm start
+   ```
+   
