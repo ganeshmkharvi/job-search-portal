@@ -60,7 +60,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 1. Clone the repo :
    ```sh
-   git clone git https://github.com/ganeshmkharvi/job-search-portal.git
+   git clone https://github.com/ganeshmkharvi/job-search-portal.git
    ```
 2. Install dependencies (use `sudo` if required) :
 
