@@ -20,6 +20,7 @@ const Checkout = () => {
         event.stopPropagation();
 
         if (!isValid) {
+            setValidated(true);
             return;
         }
 
@@ -71,7 +72,6 @@ const Checkout = () => {
                 console.log('error is ' + err);
             };
     }
-
 
     const displayMessage = () => {
         if (isFetched) {
