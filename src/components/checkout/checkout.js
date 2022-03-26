@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Col, Row, Form, Button } from "react-bootstrap";
-import './checkout.css';
 import { useLocation } from 'react-router-dom';
 import { Constants } from 'utility/constants';
 import { Link } from 'react-router-dom';
@@ -100,13 +99,13 @@ const Checkout = () => {
 
     return (
         <div className="container">
-            <div className="py-5 text-center checkoutFormHeading">
+            <div className="py-5 text-center">
                 <h2>Checkout form</h2>
                 <p className="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
             </div>
             <p><Link className="btn btn-lg btn-block btn-primary" role="button" to="/home">Home Page</Link></p>
             {displayMessage()}
-            <div className="col-md-4 order-md-2 mb-4 py-5 text-left cart">
+            <div className="col-md-4 order-md-2 mb-4 py-5 text-left float-end">
                 <h4 className="d-flex justify-content-between align-items-center mb-3">
                     <span className="text-muted">Your cart</span>
                     <span className="badge badge-secondary badge-pill">3</span>
@@ -169,8 +168,7 @@ const Checkout = () => {
                             </Form.Control.Feedback>
                         </Form.Group>
                     </Row>
-
-                    <Row className="mb-3">
+                    <Row className="mb-3 mt-3">
                         <Form.Group as={Col} md="3" controlId="validationCustomCountry">
                             <Form.Label>Country</Form.Label>
                             <Form.Select className="custom-select d-block w-100" name="country" required>
