@@ -18,6 +18,7 @@ Each service has its name, slug and descriptionloaded from the services API.
 ### Built With
 
 - [React]() - JavaScript library
+- [Bootstrap]() - CSS Framework
 
 ## Available Scripts
 
