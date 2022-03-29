@@ -1,14 +1,3 @@
-// import './App.css';
-// import Home from  'components/Home/Home';
-
-// function App() {
-//   return (
-//     <Home></Home>
-//   );
-// }
-
-// export default App;
-
 import React from 'react';
 import {BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from  'components/home/home';
