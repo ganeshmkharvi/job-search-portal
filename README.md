@@ -67,8 +67,7 @@ To run this project, you'll need to have the following installed:
   ```sh
   npm install npm@latest -g
   ```
-- MongoDB : [https://mongodb.com](https://mongodb.com) <br>
-
+- job-search-api-server repo:  https://github.com/ganeshmkharvi/job-search-api-server.git is cloned and running on your machine.
 
 ### Installation
 
