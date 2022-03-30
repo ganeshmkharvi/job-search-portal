@@ -1,3 +1,12 @@
+<p align="center">
+  <h3 align="center">Job Search API</h3>
+  <p align="center">
+    <a href="https://github.com/ganeshmkharvi/react-job-search-portal//issues">Report Bug </a>
+    ·
+    <a href="https://github.com/ganeshmkharvi/react-job-search-portal//issues"> Request Feature</a>
+  </p>
+</p>
+
 <!-- ABOUT THE PROJECT -->
 
 ### What's inside this repo?
