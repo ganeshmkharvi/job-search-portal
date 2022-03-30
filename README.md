@@ -10,8 +10,8 @@ Each service has its name, slug and descriptionloaded from the services API.
 - On clicking Buy Now, it will take you to Checkout page based on https://getbootstrap.com/docs/4.5/examples/checkout/  template. Continue to checkout button will call checkout api if all the validations pass.
 
 ### API Source
-- Api git url: https://github.com/ganeshmkharvi/job-search-api-server
-- GET services api url- http://localhost:3001/api/services 
+- Api git url: https://github.com/ganeshmkharvi/node-express-job-search-api-server
+- GET / POST services api url- http://localhost:3001/api/services 
 - POST checkout api url - http://localhost:3001/api/checkout
 - Replace 3001 with the appropriate port number you used in your project.
 
@@ -67,13 +67,13 @@ To run this project, you'll need to have the following installed:
   ```sh
   npm install npm@latest -g
   ```
-- job-search-api-server repo:  https://github.com/ganeshmkharvi/job-search-api-server.git is cloned and running on your machine.
+- job-search-api-server repo:  https://github.com/ganeshmkharvi/node-express-job-search-api-server.git is cloned and running on your machine.
 
 ### Installation
 
 1. Clone the repo :
    ```sh
-   git clone https://github.com/ganeshmkharvi/job-search-portal.git
+   git clone https://github.com/ganeshmkharvi/react-job-search-portal.git
    ```
 2. Install dependencies (use `sudo` if required) :
 
