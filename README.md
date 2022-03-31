@@ -56,7 +56,7 @@ https://getbootstrap.com/docs/4.5/examples/checkout/
       - Payment: keep only “Paypal” option and remove card details fields. 
 - Once the user pushes the “Continue to checkout” button, given the form is valid, you just save all the user details in the database. You can display message about a success or an error as an alert with corresponding color and text: https://getbootstrap.com/docs/4.5/components/alerts/ 
 
-You will end up having the following frontend pages: 
+We will end up having the following frontend pages: 
 - Homepage: /
 - Resume Writing: /services/resume-writing
 - Career Coaching: /services/career-coaching
