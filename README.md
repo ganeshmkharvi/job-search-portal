@@ -11,12 +11,60 @@
 
 ### What's inside this repo?
 
-- Home page based on: 
+#### Task description
+
+Created a little part of a website which is designated to help people with their job searching strategies. 
+The website will offer three services: 
+- Resume Writing 
+- Career Coaching 
+- Linkedin profile update
+
+Each of these services will be available in one of three tiers: 
+- Basic 
+- Professional 
+- Executive 
+
+A client can choose to purchase one of the tiers for a desired service. After that, they get redirected to the checkout form, where they can fill in their details and make a payment. 
+
+#### Technical details
+In future, most of the parameters of each service will be customizable by website admin. So the following parameters should be stored in the database and loaded from the backend API: 
+- Each service name, url (slug) and description. 
+- Name and price of each tier. 
+- Description of what’s included in the tier. 
+
+We will use this template as the homepage: 
 https://getbootstrap.com/docs/4.5/examples/jumbotron/ 
-Instead of each “Heading” column we are display the services - so, the column names from left to right are corresponding to three services. 
-Each service has its name, slug and descriptionloaded from the services API. 
-- Clicking on the “View details” button will take you to the respective service page which is based on https://getbootstrap.com/docs/4.5/examples/pricing/ template.
-- On clicking Buy Now, it will take you to Checkout page based on https://getbootstrap.com/docs/4.5/examples/checkout/  template. Continue to checkout button will call checkout api if all the validations pass.
+- Instead of each “Heading” column, display the services - so, the column names from left to right should correspond to three services. 
+- Each service should have its name, slug and description (you can stick to any dummy text) loaded from the API. 
+
+Clicking on the “View details” button, the user will get to the service page. Please use this template for it: 
+https://getbootstrap.com/docs/4.5/examples/pricing/
+- Instead of the “Pricing” header, display the service name. 
+- Instead of the text under the “Pricing” header, display the service description.
+- Display three tiers similarly to the template. For tier descriptions, also use dummy texts.
+- Service name and description, tier prices and descriptions should be loaded from the API, according to the currently open service page. 
+- A button for every tier should say “Buy now” and lead the user to the checkout page. 
+
+We will use this template as checkout page: 
+https://getbootstrap.com/docs/4.5/examples/checkout/ 
+- The “your cart” section should display one item, showing correct service name, tier name and price. You can remove the “promo code” field. 
+- Please reduce the number of fields in the form, to have only the following ones, validated as described: 
+      - First name and Last name (Both required)
+      - Email (Required and in correct format) 
+      - Address (Required)
+      - Country, State, Zip (Required)
+      - Payment: keep only “Paypal” option and remove card details fields. 
+- Once the user pushes the “Continue to checkout” button, given the form is valid, you just save all the user details in the database. You can display message about a success or an error as an alert with corresponding color and text: https://getbootstrap.com/docs/4.5/components/alerts/ 
+
+You will end up having the following frontend pages: 
+- Homepage: /
+- Resume Writing: /services/resume-writing
+- Career Coaching: /services/career-coaching
+- Linkedin profile update: /services/linkedin-profile-update
+- Checkout: /checkout
+
+Requirements 
+The app should have a React based frontend and Node.js based backend (REST API). Please use Express.js for the backend framework. For data storage, please use MongoDB.
 
 ### API Source
 - Api git url: https://github.com/ganeshmkharvi/node-express-job-search-api-server
